@@ -54,13 +54,18 @@ const Shirt = () => {
         rotation={[-Math.PI / 2, 0, 0]}
       >
         {snap.isFullTexture && fullTexture && (
-          <Decal
-            position={[0, -0.8, 3]}
-            rotation={[0, 0, 0]}
-            scale={[2 * aspectRatio, 2, 1]}
-            map={fullTexture}
-          />
-        )}
+  <mesh
+    position={[0, -.465, 3]} // Adjusted Z to be close to the shirt
+    rotation={[89.4, 0, 0]}
+  >
+    <planeGeometry args={[2 * aspectRatio, 2]} />
+    <meshBasicMaterial
+      map={fullTexture}
+      transparent={true}
+      depthWrite={true}
+    />
+  </mesh>
+)}
   
 
 
