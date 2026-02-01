@@ -19,7 +19,7 @@ const FilePicker = ({ file, setFile, readFile }) => {
         />
 
         <label htmlFor="file-upload" className="filepicker-label">
-          Upload File
+          Select File
         </label>
 
         {/* File name */}
