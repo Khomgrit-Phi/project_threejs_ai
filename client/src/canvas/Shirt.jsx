@@ -55,7 +55,7 @@ const Shirt = () => {
       >
         {snap.isFullTexture && fullTexture && (
           <Decal
-            position={[0, -0.5, 3]}
+            position={[0, -0.8, 3]}
             rotation={[0, 0, 0]}
             scale={[2 * aspectRatio, 2, 1]}
             map={fullTexture}
